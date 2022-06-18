@@ -1,0 +1,153 @@
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('https://fonts.google.com/specimen/Lexend+Deca');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    background-color: hsla(0, 0%, 100%, 0.75);
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+}
+
+.allColumns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 35px;
+    border-radius: 10px;
+    color: hsla(0, 0%, 90%, 0.75);
+}
+
+.column img, h2, p, button {
+    margin: 10px;
+}
+
+#sedan {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suv {
+    border-radius: 0;
+    background-color: hsl(184, 100%, 22%);
+}
+
+#lux {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+#sedan button {
+    background-color: white;
+    color: hsl(31, 77%, 52%);
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#sedan button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 1px solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+}
+
+#suv button {
+    background-color: white;
+    color: hsl(184, 100%, 22%);
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#suv button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 1px solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+}
+
+#lux button {
+    background-color: white;
+    color: hsl(179, 100%, 13%);
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#lux button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 1px solid white;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+}
+
+
+@media (max-width: 375px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 770) {
+    #sedan {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 10px;
+        }
+    
+        #suv {
+            border-radius: 0;
+            background-color: hsl(184, 100%, 22%);
+        }
+    
+        #lux {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            background-color: hsl(179, 100%, 13%);
+        }
+}

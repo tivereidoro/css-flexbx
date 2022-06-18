@@ -1,0 +1,53 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    place-items: center;
+    min-height: 100vh;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+main div {
+    padding: 2em;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#boxA {
+    background-color: hsl(31, 77%, 52%);
+    grid-area: a;
+}
+#boxB {
+    background-color: hsl(184, 100%, 22%);
+    grid-area: b;
+}
+#boxC {
+    background-color: lightcoral;
+    grid-area: c;
+}
+#boxD {
+    background-color: red;
+    grid-area: d;
+}
+#boxE {
+    background-color: skyblue;
+    grid-area: e;
+}
